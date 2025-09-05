@@ -15,11 +15,7 @@ def get_parsere(parser):
     parser.add_argument('-learning_rate', type = float, default = 2e-5)
     parser.add_argument('-seed', type = int, default = 42, help = 'random seed')
     parser.add_argument('-epoch', type = int, default = 10, help = 'training rounds')
-    parser.add_argument('-kernel_mul', type = float, default = 2.0, help='核函数的倍数因子')
-    parser.add_argument('-kernel_num', type = int, default = 5, help='多尺度核函数的数量')
     parser.add_argument('-dropout', type = float, default = 0.1, help = 'the value of dropout')
-    parser.add_argument('-alpha', type = float, default = 0.5, help = '样本权重正则化系数')
-    parser.add_argument('-beta', type = float, default = 0.3, help='mmd加权系数')
     parser.add_argument('-device', type = str, default = torch.device("cuda" if torch.cuda.is_available() else "cpu"))
 
     args = parser.parse_args()
