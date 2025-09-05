@@ -15,3 +15,4 @@ pip install -r requirements.txt
 Please download our dataset from the following address: <https://github.com>
 
 # train
+Before training the model, open the utilis.ty file in the tool file to modify the path of the dataset and PLM in the get-papere function. Then run the train.py file. 
