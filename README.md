@@ -11,5 +11,7 @@ Hardware configuration: Ubuntu 22.04 LTS operating system with Intel core i9-149
 conda create -n my_env python=3.9
 pip install -r requirements.txt
 ```
+# data
+Please download our dataset from the following address: <https://github.com>
 
 # train
