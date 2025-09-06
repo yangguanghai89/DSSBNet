@@ -7,19 +7,49 @@ DSSBNet: Semantic Decomposition Based on Domain Balance for Patent relevance Ass
 # Reuirements
 Hardware configuration: Ubuntu 22.04 LTS operating system with Intel core i9-14900k CPU and Nvidia GeForce Rtx 4090D GPU.
 
-```bash
+```
 conda create -n my_env python=3.9
 pip install -r requirements.txt
 ```
 # data
 Please download our dataset from the following address: <https://github.com>
 
-# train
-Before training the model, open the utilis.ty file in the tool file to modify the path of the dataset and PLM in the get-papere function, and create a folder named save to store the checkpoints. Then run the train.py file. We have released the best checkpoints during our training process, which you can download from the following address:<https://github.com>
+## 🚀 Model Training Setup
 
-# test
-Load the checkpoint with the lowest validation set loss in the test.py file for testing. You can set it in the main function of the test.py file, and the za file is used to store the reordered results.
-```
-train(path = 'save/350_0.05376943923049392_0.33214063856464165.pth', args=args, address='za/')
-```
-In path 'save/350_0.05376943923049392_0.33214063856464165.pth', 350 is the training step, 0.05376943923049392 is the training set loss, and 0.33214063856464165 is the validation set loss
+Before training the model, follow these steps:
+
+1.  **📁 Configure Paths**
+    Open `tool/utilis.ty` and modify the `get_papere` function to update the paths for your dataset and PLM.
+
+2.  **📂 Create Checkpoint Folder**
+    Create a folder named `save` to store training checkpoints.
+
+3.  **▶️ Run Training**
+    Execute `train.py` to start the training process.
+
+---
+
+💡 **Pre-trained Checkpoints**
+
+We provide the best checkpoints from our training process. Download them here:  
+<https://github.com>
+
+## 🧪 Test
+
+To evaluate the model, load the checkpoint with the lowest validation loss in `test.py`. You can configure this within the `main` function of the file. The `za/` directory is used to store reordered output results.
+
+**Example usage:**
+```train(path='save/350_0.05376943923049392_0.33214063856464165.pth', args=args, address='za/')```
+In the checkpoint path `save/350_0.05376943923049392_0.33214063856464165.pth`:
+- **350**: Training step number
+- **0.05376943923049392**: Training set loss
+- **0.33214063856464165**: Validation set loss
+
+
+
+
+
+
+
+
+
