@@ -12,7 +12,7 @@ conda create -n my_env python=3.9
 pip install -r requirements.txt
 ```
 # data
-Please download our dataset from the following address: <https://github.com>
+Please download our dataset from the following address: <https://huggingface.co/datasets/yangguanghai89/DSSBNet_data>
 
 ## 🚀 Model Training Setup
 
@@ -32,7 +32,7 @@ Before training the model, follow these steps:
 💡 **Pre-trained Checkpoints**
 
 We provide the best checkpoints from our training process. Download them here:  
-<https://github.com>
+<https://huggingface.co/yangguanghai89/DSSBNet_checkpoint>
 
 ## 🧪 Test
 
