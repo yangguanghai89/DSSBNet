@@ -35,8 +35,8 @@ Before training the model, follow these steps:
 💡 **Pre-trained Checkpoints**
 
 We provide the best checkpoints from our training process. Download them here:  
-<https://huggingface.co/yangguanghai89/DSSBNet_checkpoint>
-<https://pan.baidu.com/s/16EOvYvEOJ1W_6gR62azLTw?pwd=kieh>
+-<https://huggingface.co/yangguanghai89/DSSBNet_checkpoint>
+-<https://pan.baidu.com/s/16EOvYvEOJ1W_6gR62azLTw?pwd=kieh>
 
 ## 🧪 Test
 
